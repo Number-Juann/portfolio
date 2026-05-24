@@ -14,7 +14,7 @@ This repository showcases mechanical design projects, including STP files, rende
 ---
 
 ## Repository Structure
-
+```
 portfolio/
 │
 ├── projects/                   → Each project with CAD, renders, drawings, and documentation
@@ -24,4 +24,4 @@ portfolio/
 │     │     ├── drawings/       → Technical drawings
 │     │     ├── manufacturing/  → Assembly notes, and gcode (if applicable)
 │     │     └── README.md       → Information about project (why, how, struggles, etc.)
-
+```
