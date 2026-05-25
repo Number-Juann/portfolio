@@ -27,7 +27,8 @@ portfolio/
 │     │     ├── renders and pictures/          → High‑quality images.
 │     │     ├── drawings/                      → Technical drawings (PDF).
 │     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable).
-│     │     └── README.md                      → Information about project (why, how, struggles, etc.)
+│     │     ├── README.md                      → Information about project (why, how, struggles, etc.)
+│     │     └── .assets/                       → Contains pictures which are viewable on README.md. It can be ignored. 
 ```
 ## How to View Models
 
