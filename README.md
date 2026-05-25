@@ -19,7 +19,8 @@ portfolio/
 |                                                neutral exports, technical drawings, renders, and manufacturing documentation.
 │     ├── project-name/
 │     │     ├── CAD/                           → Universal CAD files for project parts.
-│     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred engineering software.
+│     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred
+|     |     |                                    engineering software.
 │     │     |     ├── stl/                     → STL files are viewable in GitHub's native 3D Viewer.
 │     │     |     ├── dxf/
 │     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your
