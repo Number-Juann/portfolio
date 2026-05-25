@@ -50,3 +50,13 @@ The purpose of this project is to restore airflow to the Power Supply fan, there
 <p align="center">
   <img src="./.assets/PCStandAssemblyDrawing4.PNG" width="800">
 </p>
+
+---
+
+# PC Stand in Use
+
+---
+
+<p align="center">
+  <img src="./renders%20and%20pictures/PC%20Stand%20in%20Use.png" width="450">
+</p>
