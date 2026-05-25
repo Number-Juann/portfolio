@@ -17,15 +17,19 @@ This repository showcases mechanical design projects, including STP files, rende
 ```
 portfolio/
 │
-├── projects/                     → Each project with CAD, renders, drawings, and documentation
+├── projects/                                  → Each project folder contains the complete engineering package: native CAD, neutral exports, technical drawings, renders, and manufacturing documentation.
 │     ├── project-name/
-│     │     ├── CAD/              → Universal CAD files for project parts
-│     │     |     ├── STP/
-│     │     |     ├── STL/        → STL files provide a browser preview of the 3D models
-│     │     |     ├── DXF/
-│     │     |     ├── parasolid/  → (if applicable)
+│     │     ├── CAD/                           → Universal CAD files for project parts.
+│     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred engineering software.
+│     │     |     ├── stl/                     → STL files are viewable in GitHub's native 3D Viewer.
+│     │     |     ├── dxf/
+│     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your preferred engineering software.
 │     │     ├── renders and pictures/          → High‑quality images
-│     │     ├── drawings/         → Technical drawings (PDF)
-│     │     ├── manufacturing/    → Assembly notes, and gcode (if applicable)
-│     │     └── README.md         → Information about project (why, how, struggles, etc.)
+│     │     ├── drawings/                      → Technical drawings (PDF)
+│     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable)
+│     │     └── README.md                      → Information about project (why, how, struggles, etc.)
 ```
+## How to View Models
+
+- STL files are viewable in GitHub's native 3D Viewer.
+- STEP and Parasolid files are provided for engineering use and are viewable in your preferred engineering software. 
