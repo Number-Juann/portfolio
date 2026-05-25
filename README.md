@@ -17,11 +17,15 @@ This repository showcases mechanical design projects, including STP files, rende
 ```
 portfolio/
 │
-├── projects/                   → Each project with CAD, renders, drawings, and documentation
+├── projects/                     → Each project with CAD, renders, drawings, and documentation
 │     ├── project-1/
-│     │     ├── CAD/            → STEP, STL, DXF, and native CAD exports
-│     │     ├── renders/        → High‑quality images and animations
-│     │     ├── drawings/       → Technical drawings
-│     │     ├── manufacturing/  → Assembly notes, and gcode (if applicable)
-│     │     └── README.md       → Information about project (why, how, struggles, etc.)
+│     │     ├── CAD/              → Universal CAD files for project parts
+│     │     |     ├── STP/
+│     │     |     ├── STL/        → STL files provide a browser preview of the 3D models
+│     │     |     ├── DXF/
+│     │     |     ├── parasolid/  → (if applicable)
+│     │     ├── renders/          → High‑quality images
+│     │     ├── drawings/         → Technical drawings (PDF)
+│     │     ├── manufacturing/    → Assembly notes, and gcode (if applicable)
+│     │     └── README.md         → Information about project (why, how, struggles, etc.)
 ```
