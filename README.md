@@ -24,7 +24,7 @@ portfolio/
 │     │     |     ├── STL/        → STL files provide a browser preview of the 3D models
 │     │     |     ├── DXF/
 │     │     |     ├── parasolid/  → (if applicable)
-│     │     ├── renders/          → High‑quality images
+│     │     ├── renders and pictures/          → High‑quality images
 │     │     ├── drawings/         → Technical drawings (PDF)
 │     │     ├── manufacturing/    → Assembly notes, and gcode (if applicable)
 │     │     └── README.md         → Information about project (why, how, struggles, etc.)
