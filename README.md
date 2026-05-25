@@ -18,7 +18,7 @@ This repository showcases mechanical design projects, including STP files, rende
 portfolio/
 │
 ├── projects/                     → Each project with CAD, renders, drawings, and documentation
-│     ├── project-1/
+│     ├── project-name/
 │     │     ├── CAD/              → Universal CAD files for project parts
 │     │     |     ├── STP/
 │     │     |     ├── STL/        → STL files provide a browser preview of the 3D models
