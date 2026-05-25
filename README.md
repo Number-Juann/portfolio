@@ -22,7 +22,8 @@ portfolio/
 │     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred engineering software.
 │     │     |     ├── stl/                     → STL files are viewable in GitHub's native 3D Viewer.
 │     │     |     ├── dxf/
-│     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your preferred engineering software.
+│     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your
+|     |     |                                    preferred engineering software.
 │     │     ├── renders and pictures/          → High‑quality images
 │     │     ├── drawings/                      → Technical drawings (PDF)
 │     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable)
