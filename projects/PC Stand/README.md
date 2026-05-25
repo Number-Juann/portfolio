@@ -27,4 +27,27 @@ into the case in order to regulate the internal temperature of the PC and its co
 In wooden or tiled floor the height from the case's design is usually enough. On carpet floors however, the Power Supply's fan is blocked and its airflow is restricted. 
 The purpose of this project is to restore airflow to the Power Supply fan, therefore providing proper cooling to the PC and extending its lifespan. 
 
+---
+
+# Technical Drawing Preview
+
+---
+
 [📄 **View Drawing Package (PDF)**](./drawings/PC%20Stand%20Drawing%20Package.pdf)
+
+<p align="center">
+  <img src="./.assets/sheet-1.png" width="600">
+</p>
+
+<p align="center">
+  <img src="./.assets/sheet-2.png" width="600">
+</p>
+
+<p align="center">
+  <img src="./.assets/sheet-3.png" width="600">
+</p>
+
+<p align="center">
+  <img src="./.assets/sheet-4.png" width="600">
+</p>
+
