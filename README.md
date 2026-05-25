@@ -15,20 +15,22 @@ I’m a multidisciplinary engineering technology student focused on CAD modeling
 ```
 portfolio/
 │
-├── projects/                                  → Each project folder contains the project's complete engineering package.
+├── projects/                                  → Each project folder contains the project's complete
+|                                                engineering package.
 │     ├── project-name/
 │     │     ├── CAD/                           → Universal CAD files for project parts.
-│     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred
-|     |     |                                    engineering software.
+│     │     |     ├── step/                    → Provided for engineering use and are viewable in
+|     |     |                                    your preferred engineering software.
 │     │     |     ├── stl/                     → STL files are viewable in GitHub's native 3D Viewer.
 │     │     |     ├── dxf/
-│     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your
-|     |     |                                    preferred engineering software.
+│     │     |     ├── parasolid/               → (if applicable) provided for engineering use and
+|     |     |                                    are viewable in your preferred engineering software.
 │     │     ├── renders and pictures/          → High‑quality images.
 │     │     ├── drawings/                      → Technical drawings (PDF).
 │     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable).
 │     │     ├── README.md                      → Information about project (why, how, struggles, etc.)
-│     │     └── .assets/                       → Contains pictures which are viewable on README.md. It can be ignored. 
+│     │     └── .assets/                       → Contains pictures which are viewable on README.md.
+                                                 It can be ignored. 
 ```
 ## How to View Models
 
