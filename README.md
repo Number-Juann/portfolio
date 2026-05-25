@@ -1,8 +1,6 @@
 # Juan Pablo Gonzalez Bendana - Engineering Portfolio
 
-Welcome to my engineering and CAD portfolio.
-This repository showcases mechanical design projects, including STP files, renders, dimensioned drawings, and more.
-
+I’m a multidisciplinary engineering technology student focused on CAD modeling, design for manufacturing, and rapid prototyping. This portfolio highlights my hands‑on projects and technical documentation skills.
 ---
 
 ## Skills
