@@ -1,4 +1,5 @@
 # PC Stand Project
+![PC Stand Render](./renders%20and%20pictures/PC%20Stand%20Render.png)
 ---
 ## The purpose of this project is to improve the performance and extend the lifespan of my PC. More specifically to prevent the PC's Power Supply from suffocating. 
 ---
