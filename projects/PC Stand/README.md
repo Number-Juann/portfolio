@@ -40,17 +40,17 @@ The purpose of this project is to restore airflow to the Power Supply fan, there
 [**My Drawing Package (PDF)**](./drawings/PC%20Stand%20Drawing%20Package.pdf)
 
 <p align="center">
-  <img src="./.assets/PCStandAssemblyDrawing1.PNG" width="600">
+  <img src="./.assets/PCStandAssemblyDrawing1.PNG" width="800">
 </p>
 
 <p align="center">
-  <img src="./.assets/PCStandAssemblyDrawing2.PNG" width="600">
+  <img src="./.assets/PCStandAssemblyDrawing2.PNG" width="800">
 </p>
 
 <p align="center">
-  <img src="./.assets/PCStandAssemblyDrawing3.PNG" width="600">
+  <img src="./.assets/PCStandAssemblyDrawing3.PNG" width="800">
 </p>
 
 <p align="center">
-  <img src="./.assets/PCStandAssemblyDrawing4.PNG" width="600">
+  <img src="./.assets/PCStandAssemblyDrawing4.PNG" width="800">
 </p>
