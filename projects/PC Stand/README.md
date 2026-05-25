@@ -2,7 +2,8 @@
 ---
 ## The purpose of this project is to improve the performance and extend the lifespan of my PC. More specifically to prevent the PC's Power Supply from suffocating. 
 ---
-### Summary
+## Summary
+---
 This is a simple and low-cost PC stand designed using SolidWokrs and manufactured using 3D-printed end blocks and wooden dowels. This design prioritizes ease of 
 assembly, low material cost, and clean aesthetics.
 ---
