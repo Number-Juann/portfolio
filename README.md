@@ -15,8 +15,7 @@ I’m a multidisciplinary engineering technology student focused on CAD modeling
 ```
 portfolio/
 │
-├── projects/                                  → Each project folder contains the complete engineering package: native CAD,
-|                                                neutral exports, technical drawings, renders, and manufacturing documentation.
+├── projects/                                  → Each project folder contains the project's complete engineering package.
 │     ├── project-name/
 │     │     ├── CAD/                           → Universal CAD files for project parts.
 │     │     |     ├── step/                    → Provided for engineering use and are viewable in your preferred
@@ -25,9 +24,9 @@ portfolio/
 │     │     |     ├── dxf/
 │     │     |     ├── parasolid/               → (if applicable) provided for engineering use and are viewable in your
 |     |     |                                    preferred engineering software.
-│     │     ├── renders and pictures/          → High‑quality images
-│     │     ├── drawings/                      → Technical drawings (PDF)
-│     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable)
+│     │     ├── renders and pictures/          → High‑quality images.
+│     │     ├── drawings/                      → Technical drawings (PDF).
+│     │     ├── manufacturing/                 → Assembly notes, and gcode (if applicable).
 │     │     └── README.md                      → Information about project (why, how, struggles, etc.)
 ```
 ## How to View Models
