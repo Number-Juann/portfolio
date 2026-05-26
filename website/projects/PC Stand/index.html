@@ -173,15 +173,15 @@
 <div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-sm h-[500px] flex items-center justify-center relative">
     <!-- Buttons to switch between assembly and parts -->
     <div class="flex gap-4 mb-4">
-      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/PC-Stand-Assembly.stl')">Assembly</button>
-      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/PC-Stand-3D-Printed-Part.stl')">Part 1</button>
-      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/Wooden-Dowell.stl')">Part 2</button>
+      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/PC-Stand-Assembly.STL')">Assembly</button>
+      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/PC-Stand-3D-Printed-Part.STL')">Part 1</button>
+      <button class="px-4 py-2 bg-primary-container text-white rounded" onclick="changeModel('CAD/Wooden-Dowell.STL')">Part 2</button>
     </div>
 
     <!-- Viewer container -->
     <div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-sm h-[500px]">
       <model-viewer id="viewer"
-                    src="CAD/PC-Stand-Assembly.stl"
+                    src="CAD/PC-Stand-Assembly.STL"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1"
