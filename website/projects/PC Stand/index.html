@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Automated Assembly Line | JUAN Engineering Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ffb4a8",
+                    "on-primary-fixed": "#410000",
+                    "inverse-surface": "#2f3038",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#7683e2",
+                    "background": "#fbf8ff",
+                    "surface": "#fbf8ff",
+                    "inverse-primary": "#ffb4a8",
+                    "inverse-on-surface": "#f1effa",
+                    "outline-variant": "#ddc0bb",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-tint": "#a33d2f",
+                    "surface-container-highest": "#e3e1ec",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary-fixed-variant": "#83251b",
+                    "on-surface-variant": "#57423f",
+                    "primary-container": "#500000",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "tertiary-fixed": "#dfe0ff",
+                    "on-tertiary-fixed-variant": "#303d98",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#000c61",
+                    "tertiary-container": "#001175",
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary-fixed-dim": "#bcc2ff",
+                    "on-background": "#1a1b22",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#8a716e",
+                    "on-error": "#ffffff",
+                    "tertiary": "#00053b",
+                    "on-surface": "#1a1b22",
+                    "on-primary-container": "#dc6756",
+                    "surface-dim": "#dad9e3",
+                    "surface-container-low": "#f4f2fd",
+                    "primary-fixed": "#ffdad4",
+                    "surface-variant": "#e3e1ec",
+                    "primary": "#500000",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#e2dfde",
+                    "surface-container-high": "#e8e7f1",
+                    "on-secondary-container": "#636262",
+                    "surface-container": "#eeedf7",
+                    "secondary": "#5f5e5e",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fbf8ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "gutter": "32px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Newsreader"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-md": ["Newsreader"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Newsreader"],
+                    "display-lg-mobile": ["Newsreader"],
+                    "label-sm": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .technical-list {
+            list-style: none;
+        }
+        .technical-list li::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #500000;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #ffffff;
+            color: #1a1b22;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-surface/80 backdrop-blur-md flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 z-50 border-b border-outline-variant fixed top-0 left-0">
+<div class="font-headline-sm text-headline-sm font-bold text-primary tracking-tighter">JUAN</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="../index.html">Home</a>
+<a class="font-label-md text-label-md text-primary border-b border-primary pb-1" href="../projects.html">Projects</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="../about.html">About</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="../contact.html">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-lg active:scale-95 transition-transform duration-150">Resume</button>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hero" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujLvennGwZKhYXh2PjhMJeD55caZYVBUoFBE0sVBz_JSyJM8R0niaR07I7B_IF-Cfp0JOgGHHUk3ipKkr-G4pr5YE5BcV14bIQekrOoJjFfeaZSxwPe6SlR4P8HQzhbma-M1IlmzAB7yr_kuVv4YI5_415dArWR-E93DMQLOfpGymIWVvlgENFSlzpNbhay6z1qmpl8QysZ63OMeZIRTvATatUS1Wl8eIdWkj3eEZdOifYDoRGd98SMUkM"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6">Automated Assembly Line</h1>
+<div class="h-1 w-24 bg-primary mx-auto"></div>
+</div>
+</section>
+<!-- Summary Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-8">Project Overview</h2>
+<p class="font-headline-sm text-headline-sm text-on-surface italic">
+                A comprehensive engineering challenge focused on optimizing industrial throughput through the precision management of load-bearing capacity and material fatigue. This project integrates robotic kinematics with advanced structural analysis to ensure 24/7 operational reliability.
+            </p>
+</div>
+</section>
+<!-- 3D Viewer Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex items-end justify-between mb-12 border-b border-outline-variant pb-4">
+<h2 class="font-headline-md text-headline-md text-primary">3D Model Viewer</h2>
+<span class="font-label-md text-label-md text-secondary">Interactive CAD Visualization</span>
+</div>
+<div class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant shadow-sm h-[500px] flex items-center justify-center relative">
+<!-- Placeholder for actual 3D model viewer functionality -->
+<div class="absolute inset-0 bg-[#F9F9F9] flex flex-col items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-6xl mb-4">deployed_code</span>
+<p class="font-label-md text-label-md">LOADING HIGH-PRECISION GEOMETRY...</p>
+</div>
+<!-- Interactive Overlay UI -->
+<div class="absolute bottom-6 left-6 flex gap-2">
+<button class="bg-white border border-outline p-2 hover:bg-surface transition-colors rounded">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+<button class="bg-white border border-outline p-2 hover:bg-surface transition-colors rounded">
+<span class="material-symbols-outlined">refresh</span>
+</button>
+<button class="bg-white border border-outline p-2 hover:bg-surface transition-colors rounded">
+<span class="material-symbols-outlined">view_in_ar</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Drawings Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary">Technical Drawings</h2>
+<p class="text-secondary font-body-md mt-2">Precision blueprints and isometric projection analysis.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group cursor-crosshair">
+<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Detailed technical blueprint of a mechanical assembly with precise engineering measurements and callouts in a clean, minimalist technical style with maroon accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnU_IR5bEeLODxK1Vvw28E0myEB8uDsYoM2RwwL6igQTSH68tfhEV7e-FZ7Avq_B7t_bX8BfPedeApbjdHL6HBj3rkuuC8gjhi6xa6FXiHxeL-5jwQLHvUBMXxh1p-LO7yvY6f0xv8Qorlmke3_QgrHb_pWhKqJP_CIH1lyYEJiqG2ptzJa34347NXrPa2lawi8eS8yGCYVOvkKhBA5NRlxNxVsjUZJE06UqrU0YiE5RUzvvmgK8whSHtm3YS95PEStfttJ0bA9NBN"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Isometric Assembly View</p>
+<p class="font-label-sm text-label-sm text-secondary">A-102 | Structural Chassis</p>
+</div>
+<div class="group cursor-crosshair">
+<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Macro close-up of high-precision machined gear components with oily metal textures and sharp lighting in an industrial engineering setting, focused on mechanical integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHN8fQx-iy1NF-f8GWUTpj8VYLaT5FuGUFNUNN6cdPjLMYvwgBvR5fJiMbdaBcJfcrSeoY3llWlxCxKZNb0GSWlbP37h1p7I6PImZBWIZPM6uIPlfD3JQ69f5UgGUNP5chITGd33rlwkmuSQhbtXvsZOfS88X7YO-AVBoM2QLjm37QEudk6_YI24DJtFLmQ8A70qhhP5TpSgRIEM_fNuk9Q2douoQSsI-wvwJsM-CXUIX9OuqmX5_c1t2Z1gtaQNNtDeEMh8L5VWh"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Cross-Sectional Analysis</p>
+<p class="font-label-sm text-label-sm text-secondary">B-405 | Actuator tolerances</p>
+</div>
+<div class="group cursor-crosshair">
+<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Technical CAD drawing overlay on a dark background showing the motion path of a robotic arm, rendered in clean white lines with red vector indicators for force vectors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgj-gLzyXdwBXizMfe5nhZz4d8MWdmGymcjW-IYRIa0RpnXQjN0tOPbpa7jv8qqTi6o0mXq8e9EIbHBuKzuTctV_W3dCYkXwr1ZN8-6pNEmBeSgGmH--FxBzWighcMBell7LElCqgGPg7d3l6glNAD9S_6tf7acSgHL7aBOQmziJ4Bq9SkMaIEGu0rLUdcwm7ATZ68Q7UNnxujM8bKkPGvBvp6SAdsxKyfi8UpJlMB3RZi3Ai61C1cl4ffGp3aIl5FxJcpG8TbG7-2"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Kinematic Motion Map</p>
+<p class="font-label-sm text-label-sm text-secondary">K-001 | Robotic Trajectory</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Description Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div class="space-y-8">
+<h2 class="font-headline-md text-headline-md text-primary">Engineering Challenges &amp; Solutions</h2>
+<div class="space-y-6">
+<p class="text-on-surface leading-relaxed">
+                            The primary architectural hurdle involved mitigating cyclical vibration harmonics that threatened the structural integrity of the main gantry. By implementing a hybrid carbon-steel lattice, we achieved a 30% reduction in mass while increasing torsional rigidity by nearly twofold.
+                        </p>
+<p class="text-on-surface leading-relaxed">
+                            Integration of the neural-pathway control system required millisecond precision in signal processing. Our custom G-code post-processor ensured that fluid dynamics were synchronized with mechanical movement, virtually eliminating nozzle cavitation during the extrusion phase.
+                        </p>
+<ul class="technical-list space-y-3 font-label-md text-label-md text-secondary">
+<li>Optimized material distribution via Topology Analysis</li>
+<li>Real-time thermal monitoring and feedback loops</li>
+<li>Reduced parasitic drag in conveyor sub-assemblies</li>
+</ul>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 border border-outline-variant transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+<img alt="Real Project Photo" class="relative z-10 w-full rounded shadow-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uiTN32nq-F5tCDwXGqJyVdINIcEx_KD-kFvwAM3UWlQf1at0pROqUWsH58HgUM0NyIF2SYaqgxsmMXKKBnjFLBQrgzL4DiegU4JZzVDFS9y5IW2TT0kJBL-mQWS2o7dn8-8DCH1w804vnLpj6rctwSegGdth0YQbuc8lvKrfoj-sNubeNOeF_AUOt38QvymX--QVHFfyMHOeNOBpfD2pmVAjPeiQbdYtrP4zD_G0bgiet5kOh4a6keqt3VG"/>
+<div class="absolute bottom-4 right-4 z-20 bg-primary px-4 py-2 text-white font-label-sm text-label-sm uppercase tracking-widest">In Situ Testing</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Supporting Files -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-highest">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-12 text-center">Download Engineering Assets</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">deployed_code</span>
+<span class="font-label-md text-label-md">Assembly.STEP</span>
+</button>
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">layers</span>
+<span class="font-label-md text-label-md">Chassis.STL</span>
+</button>
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">architecture</span>
+<span class="font-label-md text-label-md">Layout.DXF</span>
+</button>
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">picture_as_pdf</span>
+<span class="font-label-md text-label-md">Datasheet.PDF</span>
+</button>
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">terminal</span>
+<span class="font-label-md text-label-md">Program.GCODE</span>
+</button>
+<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary">image</span>
+<span class="font-label-md text-label-md">Render_Pack.ZIP</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-gutter px-margin-mobile md:px-margin-desktop border-t border-outline-variant">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
+<div class="font-headline-sm text-headline-sm text-primary">JUAN</div>
+<div class="font-body-md text-body-md text-on-surface md:order-last">
+                © 2024 Juan. All rights reserved. Engineered with precision.
+            </div>
+<div class="flex gap-gutter">
+<a class="font-label-sm text-label-sm text-secondary hover:text-on-primary-fixed-variant underline decoration-1 underline-offset-4 transition-opacity" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-on-primary-fixed-variant underline decoration-1 underline-offset-4 transition-opacity" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-on-primary-fixed-variant underline decoration-1 underline-offset-4 transition-opacity" href="#">Twitter</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-on-primary-fixed-variant underline decoration-1 underline-offset-4 transition-opacity" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for technical feel
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.style.transform = 'scale(0.98)';
+            });
+            button.addEventListener('mouseup', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+
+        // Simple parallax for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('section img');
+            if(heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.4}px)`;
+            }
+        });
+    </script>
+</body></html>
