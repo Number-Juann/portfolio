@@ -269,8 +269,9 @@
 </section>
 <!-- Drawing Modal -->
 <div id="drawingModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center">
-  <div class="relative bg-surface-container p-4 rounded-lg shadow-xl w-[90vw] h-[70vh]">
-    
+  <div class="relative bg-surface-container p-4 rounded-lg shadow-xl"
+       style="height: 75vh; width: min(90vw, calc(75vh * 1.414));">
+       
     <button onclick="closeDrawing()" class="absolute top-2 right-3 text-white text-3xl leading-none">
       &times;
     </button>
@@ -278,12 +279,12 @@
     <iframe id="drawingPDF" class="w-full h-full rounded-lg"></iframe>
 
     <div class="flex justify-between mt-4">
-      <button onclick="prevDrawing()" class="px-4 py-2 bg-primary text-white rounded">← Previous</button>
-      <button onclick="nextDrawing()" class="px-4 py-2 bg-primary text-white rounded">Next →</button>
+      <button onclick="prevDrawing()" class="px-4 py-2 bg-primary text-white rounded">Previous</button>
+      <button onclick="nextDrawing()" class="px-4 py-2 bg-primary text-white rounded">Next</button>
     </div>
-
   </div>
 </div>
+
 <!-- Detailed Description Section -->
 <section class="py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
