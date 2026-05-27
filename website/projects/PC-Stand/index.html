@@ -269,14 +269,14 @@
 </section>
 <!-- Drawing Modal -->
 <div id="drawingModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center">
-  <div class="relative bg-surface-container p-4 rounded-lg shadow-xl"
+  <div class="relative p-4 rounded-lg shadow-xl bg-transparent"
        style="height: 75vh; width: min(90vw, calc(75vh * 1.414));">
-       
-    <button onclick="closeDrawing()" class="absolute top-2 right-3 text-white text-3xl leading-none">
+
+    <button onclick="closeDrawing()" class="absolute top-2 right-3 text-white text-3xl leading-none drop-shadow-lg">
       &times;
     </button>
 
-    <iframe id="drawingPDF" class="w-full h-full rounded-lg" style="background: transparent;"></iframe>
+    <iframe id="drawingPDF" class="w-full h-full rounded-lg bg-transparent"></iframe>
 
     <div class="flex justify-between mt-4">
       <button onclick="prevDrawing()" class="px-4 py-2 bg-primary text-white rounded">Previous</button>
@@ -284,7 +284,6 @@
     </div>
   </div>
 </div>
-
 <!-- Detailed Description Section -->
 <section class="py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
