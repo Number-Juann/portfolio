@@ -224,30 +224,56 @@
 <p class="text-secondary font-body-md mt-2">Precision blueprints and isometric projection analysis.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<div class="group cursor-crosshair">
-<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Detailed technical blueprint of a mechanical assembly with precise engineering measurements and callouts in a clean, minimalist technical style with maroon accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnU_IR5bEeLODxK1Vvw28E0myEB8uDsYoM2RwwL6igQTSH68tfhEV7e-FZ7Avq_B7t_bX8BfPedeApbjdHL6HBj3rkuuC8gjhi6xa6FXiHxeL-5jwQLHvUBMXxh1p-LO7yvY6f0xv8Qorlmke3_QgrHb_pWhKqJP_CIH1lyYEJiqG2ptzJa34347NXrPa2lawi8eS8yGCYVOvkKhBA5NRlxNxVsjUZJE06UqrU0YiE5RUzvvmgK8whSHtm3YS95PEStfttJ0bA9NBN"/>
+<div class="cursor-pointer" onclick="openDrawing(0)">
+  <div class="group cursor-crosshair">
+    <div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+      <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+           src="drawings/PC-Stand-Sheet-1.png" />
+    </div>
+    <p class="font-label-md text-label-md text-on-surface">Isometric Assembly View</p>
+    <p class="font-label-sm text-label-sm text-secondary">A-102 | Structural Chassis</p>
+  </div>
 </div>
-<p class="font-label-md text-label-md text-on-surface">Isometric Assembly View</p>
-<p class="font-label-sm text-label-sm text-secondary">A-102 | Structural Chassis</p>
+<div class="cursor-pointer" onclick="openDrawing(1)">
+  <div class="group cursor-crosshair">
+    <div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+      <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+           src="drawings/PC-Stand-Sheet-2.png" />
+    </div>
+    <p class="font-label-md text-label-md text-on-surface">Cross-Sectional Analysis</p>
+    <p class="font-label-sm text-label-sm text-secondary">B-405 | Actuator tolerances</p>
+  </div>
 </div>
-<div class="group cursor-crosshair">
-<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Macro close-up of high-precision machined gear components with oily metal textures and sharp lighting in an industrial engineering setting, focused on mechanical integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtHN8fQx-iy1NF-f8GWUTpj8VYLaT5FuGUFNUNN6cdPjLMYvwgBvR5fJiMbdaBcJfcrSeoY3llWlxCxKZNb0GSWlbP37h1p7I6PImZBWIZPM6uIPlfD3JQ69f5UgGUNP5chITGd33rlwkmuSQhbtXvsZOfS88X7YO-AVBoM2QLjm37QEudk6_YI24DJtFLmQ8A70qhhP5TpSgRIEM_fNuk9Q2douoQSsI-wvwJsM-CXUIX9OuqmX5_c1t2Z1gtaQNNtDeEMh8L5VWh"/>
-</div>
-<p class="font-label-md text-label-md text-on-surface">Cross-Sectional Analysis</p>
-<p class="font-label-sm text-label-sm text-secondary">B-405 | Actuator tolerances</p>
-</div>
-<div class="group cursor-crosshair">
-<div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Technical CAD drawing overlay on a dark background showing the motion path of a robotic arm, rendered in clean white lines with red vector indicators for force vectors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgj-gLzyXdwBXizMfe5nhZz4d8MWdmGymcjW-IYRIa0RpnXQjN0tOPbpa7jv8qqTi6o0mXq8e9EIbHBuKzuTctV_W3dCYkXwr1ZN8-6pNEmBeSgGmH--FxBzWighcMBell7LElCqgGPg7d3l6glNAD9S_6tf7acSgHL7aBOQmziJ4Bq9SkMaIEGu0rLUdcwm7ATZ68Q7UNnxujM8bKkPGvBvp6SAdsxKyfi8UpJlMB3RZi3Ai61C1cl4ffGp3aIl5FxJcpG8TbG7-2"/>
-</div>
-<p class="font-label-md text-label-md text-on-surface">Kinematic Motion Map</p>
-<p class="font-label-sm text-label-sm text-secondary">K-001 | Robotic Trajectory</p>
+<div class="cursor-pointer" onclick="openDrawing(2)">
+  <div class="group cursor-crosshair">
+    <div class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary">
+      <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+           src="drawings/PC-Stand-Sheet-3.png" />
+    </div>
+    <p class="font-label-md text-label-md text-on-surface">Kinematic Motion Map</p>
+    <p class="font-label-sm text-label-sm text-secondary">K-001 | Robotic Trajectory</p>
+  </div>
 </div>
 </div>
 </div>
 </section>
+<!-- Drawing Modal -->
+<div id="drawingModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center">
+  <div class="relative bg-surface-container p-4 rounded-lg shadow-xl max-w-4xl w-[90%]">
+    
+    <button onclick="closeDrawing()" class="absolute top-2 right-3 text-white text-3xl leading-none">
+      &times;
+    </button>
+
+    <iframe id="drawingPDF" class="w-full h-[80vh] rounded-lg"></iframe>
+
+    <div class="flex justify-between mt-4">
+      <button onclick="prevDrawing()" class="px-4 py-2 bg-primary text-white rounded">← Previous</button>
+      <button onclick="nextDrawing()" class="px-4 py-2 bg-primary text-white rounded">Next →</button>
+    </div>
+
+  </div>
+</div>
 <!-- Detailed Description Section -->
 <section class="py-section-gap px-margin-mobile md:px-margin-desktop">
 <div class="max-w-container-max mx-auto">
