@@ -7,6 +7,7 @@ function openDownloadModal(files) {
   files.forEach(file => {
     const li = document.createElement("li");
     li.textContent = file;
+    li.dataset.path = file; // store the path for downloading
     list.appendChild(li);
   });
 
@@ -17,7 +18,21 @@ function closeDownloadModal() {
   document.getElementById("downloadModal").classList.add("hidden");
 }
 
-function confirmDownload() {
-  alert("Download functionality will be added later.");
+// FINAL VERSION — ZIP DOWNLOAD
+async function confirmDownload() {
+  const list = document.getElementById("downloadFileList");
+  const files = [...list.children].map(li => li.dataset.path);
+
+  const zip = new JSZip();
+
+  for (const path of files) {
+    const response = await fetch(path);
+    const blob = await response.blob();
+    zip.file(path.split('/').pop(), blob);
+  }
+
+  const content = await zip.generateAsync({ type: "blob" });
+  saveAs(content, "PC-Stand-Files.zip");
+
   closeDownloadModal();
 }
