@@ -1,3 +1,6 @@
+// Automatically detect project name from URL
+const PROJECT_NAME = window.location.pathname.split("/").slice(-2, -1)[0];
+
 function openDownloadModal(files) {
   const modal = document.getElementById("downloadModal");
   const list = document.getElementById("downloadFileList");
@@ -7,7 +10,7 @@ function openDownloadModal(files) {
   files.forEach(file => {
     const li = document.createElement("li");
     li.textContent = file;
-    li.dataset.path = file; // store the path for downloading
+    li.dataset.path = file;
     list.appendChild(li);
   });
 
@@ -18,12 +21,33 @@ function closeDownloadModal() {
   document.getElementById("downloadModal").classList.add("hidden");
 }
 
-// FINAL VERSION — ZIP DOWNLOAD
+function getFileCategory(files) {
+  const ext = files[0].split('.').pop().toLowerCase();
+
+  switch (ext) {
+    case "step":
+    case "x_t":
+    case "x_b":
+      return "CAD";
+    case "stl":
+      return "STL";
+    case "dxf":
+      return "DXF";
+    case "pdf":
+      return "PDF";
+    case "gcode":
+      return "GCode";
+    default:
+      return "Files";
+  }
+}
+
 async function confirmDownload() {
   const list = document.getElementById("downloadFileList");
   const files = [...list.children].map(li => li.dataset.path);
 
   const zip = new JSZip();
+  const category = getFileCategory(files);
 
   for (const path of files) {
     const response = await fetch(path);
@@ -32,7 +56,11 @@ async function confirmDownload() {
   }
 
   const content = await zip.generateAsync({ type: "blob" });
-  saveAs(content, "PC-Stand-Files.zip");
+
+  // Dynamic ZIP name based on folder + file type
+  const zipName = `${PROJECT_NAME}-${category}-Files.zip`;
+
+  saveAs(content, zipName);
 
   closeDownloadModal();
 }
