@@ -303,30 +303,73 @@
 <section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-highest">
 <div class="max-w-container-max mx-auto">
 <h2 class="font-headline-sm text-headline-sm text-primary mb-12 text-center">Download Engineering Assets</h2>
+
 <div class="flex flex-wrap justify-center gap-4">
-<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
-<span class="material-symbols-outlined text-secondary group-hover:text-primary">deployed_code</span>
-<span class="font-label-md text-label-md">.STEP & Parasolid</span>
+
+<button onclick="openDownloadModal(['Assembly.STEP', 'Assembly.x_t'])"
+        class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+  <span class="material-symbols-outlined text-secondary group-hover:text-primary">deployed_code</span>
+  <span class="font-label-md text-label-md">.STEP & Parasolid</span>
 </button>
-<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
-<span class="material-symbols-outlined text-secondary group-hover:text-primary">layers</span>
-<span class="font-label-md text-label-md">.STL</span>
+
+<button onclick="openDownloadModal(['Chassis.STL'])"
+        class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+  <span class="material-symbols-outlined text-secondary group-hover:text-primary">layers</span>
+  <span class="font-label-md text-label-md">.STL</span>
 </button>
-<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
-<span class="material-symbols-outlined text-secondary group-hover:text-primary">architecture</span>
-<span class="font-label-md text-label-md">.DXF</span>
+
+<button onclick="openDownloadModal(['Layout.DXF'])"
+        class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+  <span class="material-symbols-outlined text-secondary group-hover:text-primary">architecture</span>
+  <span class="font-label-md text-label-md">.DXF</span>
 </button>
-<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
-<span class="material-symbols-outlined text-secondary group-hover:text-primary">picture_as_pdf</span>
-<span class="font-label-md text-label-md">.PDF</span>
+
+<button onclick="openDownloadModal(['Datasheet.PDF'])"
+        class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+  <span class="material-symbols-outlined text-secondary group-hover:text-primary">picture_as_pdf</span>
+  <span class="font-label-md text-label-md">.PDF</span>
 </button>
-<button class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
-<span class="material-symbols-outlined text-secondary group-hover:text-primary">terminal</span>
-<span class="font-label-md text-label-md">.GCODE</span>
+
+<button onclick="openDownloadModal(['Program.GCODE'])"
+        class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group">
+  <span class="material-symbols-outlined text-secondary group-hover:text-primary">terminal</span>
+  <span class="font-label-md text-label-md">.GCODE</span>
 </button>
+
 </div>
 </div>
 </section>
+
+<!-- Download Modal -->
+<div id="downloadModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden z-50 flex items-center justify-center">
+  <div class="relative bg-surface-container-highest p-6 rounded-xl shadow-xl w-[90%] max-w-lg">
+
+    <!-- Close Button -->
+    <button onclick="closeDownloadModal()" 
+            class="absolute -top-4 -right-4 bg-black/70 hover:bg-black text-white 
+                   w-10 h-10 flex items-center justify-center rounded-full 
+                   text-3xl leading-none drop-shadow-xl">
+      &times;
+    </button>
+
+    <h3 class="font-headline-sm text-headline-sm text-primary mb-4 text-center">
+      Files to Download
+    </h3>
+
+    <!-- File List -->
+    <ul id="downloadFileList" class="text-on-surface-variant mb-6 space-y-2">
+      <!-- JS will insert file names here -->
+    </ul>
+
+    <!-- Download Button -->
+    <button onclick="confirmDownload()" 
+            class="w-full bg-primary text-white py-3 rounded-lg font-label-lg hover:bg-primary-dark transition">
+      Download
+    </button>
+
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="bg-surface-container w-full py-gutter px-margin-mobile md:px-margin-desktop border-t border-outline-variant">
 <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-base">
