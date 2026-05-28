@@ -128,70 +128,98 @@
             background-color: #ffffff;
             color: #1a1b22;
         }
+        /* Universal navbar styling */
+      .navbar {
+        width: 100%;
+        padding: 16px 24px;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddc0bb;
+        background-color: rgba(251, 248, 255, 0.8);
+        backdrop-filter: blur(12px);
+      }
+      
+      /* Left: name */
+      .navbar-name {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 1.875rem; /* ~text-3xl */
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #500000;
+      }
+      
+      /* Center: nav container */
+      .navbar-links {
+        display: none;
+      }
+      @media (min-width: 768px) {
+        .navbar-links {
+          display: flex;
+          gap: 40px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          align-items: center;
+        }
+      }
+      
+      /* Each link */
+      .navbar-link {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 4px;
+        color: #500000;
+        text-decoration: none;
+      }
+      
+      /* Active link (underline) */
+      .navbar-link--active {
+        border-bottom: 2px solid #500000;
+      }
+      
+      /* Right: resume button */
+      .navbar-resume {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #500000;
+        color: white;
+        padding: 8px 24px;
+        border-radius: 8px;
+        display: inline-block;
+        text-decoration: none;
+      }
+
     </style>
 </head>
 <body class="font-body-md text-body-md overflow-x-hidden">
 <!-- TopNavBar -->
-<nav class="w-full px-margin-mobile md:px-margin-desktop py-4 z-50 sticky top-0
-            flex items-center justify-between relative border-b"
-     style="background-color: rgba(251,248,255,0.8); backdrop-filter: blur(12px); border-color:#ddc0bb;">
-
+<nav class="navbar">
   <!-- Left: Name -->
-  <div style="
-       font-family: 'Hanken Grotesk', sans-serif;
-       font-weight: 700;
-       font-size: 1.875rem; /* text-3xl */
-       letter-spacing: -0.01em;
-       text-transform: uppercase;
-       color:#500000;
-     ">
+  <div class="navbar-name">
     Juan Pablo Gonzalez Bendana
   </div>
 
   <!-- Center: Navigation -->
-  <div class="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
-
-    <a href="/index.html"
-       class="pb-1"
-       style="font-family:'Hanken Grotesk'; font-size:14px; font-weight:600; color:#500000;">
-      Home
-    </a>
-
-    <a href="/projects.html"
-       class="pb-1"
-       style="font-family:'Hanken Grotesk'; font-size:14px; font-weight:600; color:#500000;">
-      Projects
-    </a>
-
-    <a href="/about.html"
-       class="pb-1"
-       style="font-family:'Hanken Grotesk'; font-size:14px; font-weight:600; color:#500000;">
-      About
-    </a>
-
-    <a href="/contact.html"
-       class="pb-1"
-       style="font-family:'Hanken Grotesk'; font-size:14px; font-weight:600; color:#500000;">
-      Contact
-    </a>
-
+  <div class="navbar-links">
+    <a href="/index.html" class="navbar-link">Home</a>
+    <a href="/projects.html" class="navbar-link navbar-link--active">Projects</a>
+    <a href="/about.html" class="navbar-link">About</a>
+    <a href="/contact.html" class="navbar-link">Contact</a>
   </div>
 
   <!-- Right: Resume -->
-  <a href="/resume.pdf"
-     style="
-       font-family:'Hanken Grotesk';
-       font-size:14px;
-       font-weight:600;
-       background-color:#500000;
-       color:white;
-       padding:8px 24px;
-       border-radius:8px;
-       display:inline-block;
-     ">
+  <a href="/resume.pdf" class="navbar-resume">
     Resume
   </a>
 </nav>
+
 
 <!-- Hero Section -->
 <section class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
