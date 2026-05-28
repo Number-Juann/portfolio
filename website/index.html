@@ -119,39 +119,58 @@
 </head>
 <body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-white">
 <!-- TopNavBar -->
-<nav class="bg-surface/80 backdrop-blur-md border-b border-outline-variant 
-            flex justify-between items-center w-full 
-            px-margin-mobile md:px-margin-desktop py-4 z-50 sticky top-0">
+<nav class="bg-surface/80 backdrop-blur-md border-b border-outline-variant
+            w-full px-margin-mobile md:px-margin-desktop py-4 z-50 sticky top-0
+            flex items-center justify-between relative">
 
   <!-- Left: Name -->
-  <div class="font-headline-sm text-headline-sm font-bold tracking-tighter uppercase"
+  <div class="font-label-md text-label-md font-bold tracking-tight uppercase"
        style="color:#500000;">
     Juan Pablo Gonzalez Bendana
   </div>
 
-  <!-- Center: Navigation -->
-  <div class="hidden md:flex items-center gap-gutter mx-auto">
-    <a class="font-label-md text-label-md pb-1 transition-colors duration-200"
-       style="color:#500000;" href="/index.html">Home</a>
+  <!-- Center: Navigation (perfectly centered) -->
+  <div class="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
 
-    <a class="font-label-md text-label-md pb-1 transition-colors duration-200"
-       style="color:#500000;" href="/projects.html">Projects</a>
+<a href="/index.html"
+   class="font-label-md text-label-md pb-1 border-b-2 border-[#500000] 
+          transition-colors duration-200 hover:text-[#500000]"
+   style="color:#500000;">
+  Home
+</a>
 
-    <a class="font-label-md text-label-md pb-1 transition-colors duration-200"
-       style="color:#500000;" href="/about.html">About</a>
+    <a href="/projects.html"
+       class="font-label-md text-label-md pb-1 transition-colors duration-200
+              hover:text-[#500000]"
+       style="color:#500000;">
+      Projects
+    </a>
 
-    <a class="font-label-md text-label-md pb-1 transition-colors duration-200"
-       style="color:#500000;" href="/contact.html">Contact</a>
+    <a href="/about.html"
+       class="font-label-md text-label-md pb-1 transition-colors duration-200
+              hover:text-[#500000]"
+       style="color:#500000;">
+      About
+    </a>
+
+    <a href="/contact.html"
+       class="font-label-md text-label-md pb-1 transition-colors duration-200
+              hover:text-[#500000]"
+       style="color:#500000;">
+      Contact
+    </a>
+
   </div>
 
   <!-- Right: Resume Button -->
-  <a class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95 
+  <a href="/resume.pdf"
+     class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95
             transition-transform duration-150"
-     style="background-color:#500000; color:white;"
-     href="/resume.pdf">
+     style="background-color:#500000; color:white;">
     Resume
   </a>
 </nav>
+
 
 <!-- Hero Section -->
 <header class="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop overflow-hidden" id="home">
