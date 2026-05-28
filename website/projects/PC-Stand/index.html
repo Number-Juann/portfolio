@@ -127,79 +127,11 @@
         body {
             background-color: #ffffff;
             color: #1a1b22;
-        }
-       /* Universal navbar styling */
-.navbar {
-  width: 100%;
-  padding: 16px 24px;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ddc0bb;
-  background-color: rgba(251, 248, 255, 0.8);
-  backdrop-filter: blur(12px);
-}
-
-/* Left: name */
-.navbar-name {
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.875rem; /* text-3xl */
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #500000;
-}
-
-/* Center: nav container */
-.navbar-links {
-  display: none;
-}
-@media (min-width: 768px) {
-  .navbar-links {
-    display: flex;
-    gap: 40px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    align-items: center;
-  }
-}
-
-/* Each link */
-.navbar-link {
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  padding-bottom: 4px;
-  color: #500000;
-  text-decoration: none;
-}
-
-/* Active link (underline) */
-.navbar-link--active {
-  border-bottom: 2px solid #500000;
-}
-
-/* Right: resume button */
-.navbar-resume {
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #500000;
-  color: white;
-  padding: 8px 24px;
-  border-radius: 8px;
-  display: inline-block;
-  text-decoration: none;
-}
       
-/* Fix Tailwind differences so navbar renders the same */
-nav {
-  backdrop-filter: blur(12px);
-}
+      /* Fix Tailwind differences so navbar renders the same */
+      nav {
+        backdrop-filter: blur(12px);
+      }
 
     </style>
 </head>
