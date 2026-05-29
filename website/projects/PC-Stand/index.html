@@ -195,6 +195,12 @@
       nav {
         backdrop-filter: blur(12px);
       }
+     
+      model-viewer {
+    position: relative;
+    z-index: 0 !important;
+  }
+      
     </style>
   </head>
 
@@ -260,7 +266,7 @@
     </nav>
 
 <!-- Resume Modal -->
-<div id="resumeModal" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+<div id="resumeModal" class="hidden fixed inset-0 z-[9999] bg-black/70 flex items-center justify-center">
   <div class="relative bg-white p-4 rounded-lg shadow-xl w-[90%] max-w-3xl h-[80vh]">
 
     <!-- Close -->
