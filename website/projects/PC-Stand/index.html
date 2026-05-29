@@ -258,9 +258,9 @@
 
     </nav>
 
-    <!-- Resume Viewer Modal -->
-    <div id="resumeModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-  <div class="relative bg-white rounded-lg shadow-xl w-[90vw] max-w-4xl h-[80vh] overflow-hidden">
+<!-- Resume Modal -->
+<div id="resumeModal" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center">
+  <div class="relative bg-white p-4 rounded-lg shadow-xl w-[90%] max-w-3xl h-[80vh]">
 
     <!-- Close -->
     <button
@@ -270,16 +270,15 @@
       &times;
     </button>
 
-    <!-- PDF viewer -->
+    <!-- PDF Viewer -->
     <iframe
       id="resumePDF"
-      class="w-full h-full border-0 bg-transparent"
+      class="w-full h-full rounded bg-transparent"
       src=""
-      title="Resume PDF"
     ></iframe>
 
     <!-- Controls -->
-    <div class="absolute left-4 bottom-4 flex gap-3">
+    <div class="flex justify-between mt-4">
       <a
         id="resumeDownload"
         href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf"
@@ -301,6 +300,7 @@
 
   </div>
 </div>
+
 
 
     <!-- Hero Section -->
