@@ -244,71 +244,13 @@
         </a>
 
         <a
-          href="/contact.html"
-          class="font-label-md text-label-md pb-1 transition-colors duration-200 hover:text-[#500000]"
-          style="color:#500000;"
-        >
-          Contact
-        </a>
-      </div>
-
-      <!-- Right: Resume Button (opens modal) -->
-     <a
-  href="#"
-  onclick="openResume()"
+  href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf"
+  target="_blank"
   class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95 transition-transform duration-150"
   style="background-color:#500000; color:white;"
 >
   Resume
 </a>
-
-
-    </nav>
-
-<!-- Resume Modal -->
-<div id="resumeModal" class="hidden fixed inset-0 z-[9999] bg-black/70 flex items-center justify-center">
-  <div class="relative bg-white p-4 rounded-lg shadow-xl w-[90%] max-w-3xl h-[80vh]">
-
-    <!-- Close -->
-    <button
-      onclick="closeResume()"
-      class="absolute -top-6 -right-6 bg-black/70 hover:bg-black text-white w-10 h-10 flex items-center justify-center rounded-full text-3xl leading-none"
-    >
-      &times;
-    </button>
-
-    <!-- PDF Viewer -->
-    <iframe
-      id="resumePDF"
-      class="w-full h-full rounded bg-transparent"
-      src=""
-    ></iframe>
-
-    <!-- Controls -->
-    <div class="flex justify-between mt-4">
-      <a
-        id="resumeDownload"
-        href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf"
-        download
-        class="px-4 py-2 bg-primary text-white rounded"
-      >
-        Download
-      </a>
-
-      <a
-        id="resumeOpenNew"
-        href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf"
-        target="_blank"
-        class="px-4 py-2 bg-white border border-outline-variant text-primary rounded"
-      >
-        Open in new tab
-      </a>
-    </div>
-
-  </div>
-</div>
-
-
 
     <!-- Hero Section -->
     <section class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
@@ -727,7 +669,6 @@
     <script src="../../js/downloads.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="../../js/resumeViewer.js"></script>
 
     <script
       type="module"
