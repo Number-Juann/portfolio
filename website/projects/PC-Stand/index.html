@@ -185,7 +185,7 @@ flex items-center justify-between relative">
    id="resumeButton"
    class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95 transition-transform duration-150"
    style="background-color:#500000; color:white;"
-   onclick="openResumeModal(event, '/resume.pdf')">
+   onclick="openResumeModal(event, '../../resume/JuanPablo-GonzalezBendana-Resume.pdf')">
   Resume
 </a>
 
@@ -472,24 +472,25 @@ window.projectDrawings = [
 <!-- Resume Viewer Modal -->
 <div id="resumeModal" class="hidden fixed inset-0 z-60 flex items-center justify-center bg-black/60 backdrop-blur-sm" aria-hidden="true" role="dialog" aria-modal="true">
   <div class="relative w-[90vw] max-w-4xl h-[80vh] bg-white rounded-lg shadow-xl overflow-hidden">
+
     <!-- Close -->
     <button aria-label="Close resume" onclick="closeResumeModal()" class="absolute top-3 right-3 z-30 bg-black/60 hover:bg-black text-white w-10 h-10 flex items-center justify-center rounded-full text-2xl">×</button>
 
     <!-- Iframe viewer -->
-    <iframe id="resumeIframe" class="w-full h-full border-0 bg-transparent" src="" title="Resume PDF viewer" style="background:#fff"></iframe>
+    <iframe id="resumeIframe" class="w-full h-full border-0 bg-transparent" src="" title="Resume PDF viewer"></iframe>
 
-    <!-- Controls (download / open in new tab) -->
+    <!-- Controls -->
     <div class="absolute left-4 bottom-4 z-40 flex gap-3">
-      <a id="resumeDownloadLink" href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf" download class="inline-flex items-center gap-2 bg-primary px-4 py-2 text-white rounded-lg" target="_blank" rel="noopener">
+      <a id="resumeDownloadLink" href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf" download class="inline-flex items-center gap-2 bg-primary px-4 py-2 text-white rounded-lg">
         Download
       </a>
       <a id="resumeOpenNew" href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-outline-variant px-4 py-2 text-primary rounded-lg">
         Open in new tab
       </a>
     </div>
+
   </div>
 </div>
-
 
 </body>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
