@@ -1,42 +1,39 @@
-function openResumeModal(event, resumePath) {
-  if (event) event.preventDefault();
+// Path to your resume
+const resumePath = "../../resume/JuanPablo-GonzalezBendana-Resume.pdf";
 
-  const modal = document.getElementById('resumeModal');
-  const iframe = document.getElementById('resumeIframe');
-  const downloadLink = document.getElementById('resumeDownloadLink');
-  const openNew = document.getElementById('resumeOpenNew');
+function openResume() {
+  const modal = document.getElementById("resumeModal");
+  const iframe = document.getElementById("resumePDF");
+  const download = document.getElementById("resumeDownload");
+  const openNew = document.getElementById("resumeOpenNew");
 
   iframe.src = resumePath;
-  downloadLink.href = resumePath;
+  download.href = resumePath;
   openNew.href = resumePath;
 
-  modal.classList.remove('hidden');
-  modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
 
-function closeResumeModal() {
-  const modal = document.getElementById('resumeModal');
-  const iframe = document.getElementById('resumeIframe');
+function closeResume() {
+  const modal = document.getElementById("resumeModal");
+  const iframe = document.getElementById("resumePDF");
 
-  modal.classList.add('hidden');
-  modal.setAttribute('aria-hidden', 'true');
-  iframe.src = '';
-  document.body.style.overflow = '';
+  modal.classList.add("hidden");
+  iframe.src = "";
+  document.body.style.overflow = "";
 }
 
-document.addEventListener('keydown', (e) => {
-  const modal = document.getElementById('resumeModal');
-  if (!modal || modal.classList.contains('hidden')) return;
-  if (e.key === 'Escape') closeResumeModal();
+// Close on Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeResume();
 });
 
-document.addEventListener('click', (e) => {
-  const modal = document.getElementById('resumeModal');
-  if (!modal || modal.classList.contains('hidden')) return;
+// Close when clicking outside
+document.addEventListener("click", (e) => {
+  const modal = document.getElementById("resumeModal");
+  if (modal.classList.contains("hidden")) return;
 
-  const container = modal.querySelector('.relative');
-  if (container && !container.contains(e.target)) {
-    closeResumeModal();
-  }
+  const box = modal.querySelector(".relative");
+  if (box && !box.contains(e.target)) closeResume();
 });
