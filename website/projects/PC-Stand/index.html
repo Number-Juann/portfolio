@@ -180,14 +180,15 @@ flex items-center justify-between relative">
 
   </div>
 
-  <!-- Right: Resume Button -->
-  <a href="/resume.pdf"
-     class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95
-            transition-transform duration-150"
-     style="background-color:#500000; color:white;">
-    Resume
-  </a>
-</nav>
+  <!-- Right: Resume Button (opens modal) -->
+<a href="../../resume/JuanPablo-GonzalezBendana-Resume.pdf"
+   id="resumeButton"
+   class="font-label-md text-label-md px-6 py-2 rounded-lg active:scale-95 transition-transform duration-150"
+   style="background-color:#500000; color:white;"
+   onclick="openResumeModal(event, '/resume.pdf')">
+  Resume
+</a>
+
 
 <!-- Hero Section -->
 <section class="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
@@ -466,6 +467,30 @@ window.projectDrawings = [
 <script src="../../js/downloads.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="../../js/resumeViewer.js"></script>
+
+<!-- Resume Viewer Modal -->
+<div id="resumeModal" class="hidden fixed inset-0 z-60 flex items-center justify-center bg-black/60 backdrop-blur-sm" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="relative w-[90vw] max-w-4xl h-[80vh] bg-white rounded-lg shadow-xl overflow-hidden">
+    <!-- Close -->
+    <button aria-label="Close resume" onclick="closeResumeModal()" class="absolute top-3 right-3 z-30 bg-black/60 hover:bg-black text-white w-10 h-10 flex items-center justify-center rounded-full text-2xl">×</button>
+
+    <!-- Iframe viewer -->
+    <iframe id="resumeIframe" class="w-full h-full border-0 bg-transparent" src="" title="Resume PDF viewer" style="background:#fff"></iframe>
+
+    <!-- Controls (download / open in new tab) -->
+    <div class="absolute left-4 bottom-4 z-40 flex gap-3">
+      <a id="resumeDownloadLink" href="/resume.pdf" download class="inline-flex items-center gap-2 bg-primary px-4 py-2 text-white rounded-lg" target="_blank" rel="noopener">
+        Download
+      </a>
+      <a id="resumeOpenNew" href="/resume.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white border border-outline-variant px-4 py-2 text-primary rounded-lg">
+        Open in new tab
+      </a>
+    </div>
+  </div>
+</div>
+
+
 </body>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </html>
