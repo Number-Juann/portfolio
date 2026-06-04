@@ -311,21 +311,21 @@
         <div class="flex gap-4 mb-4">
           <button
             class="px-4 py-2 bg-primary-container text-white rounded"
-            onclick="changeModel('CAD/pc-stand-assembly.glb')"
+            onclick="changeModel('CAD/logo-assembly.glb')"
           >
-            PC Stand Assembly
+            HS Tennis Logo Assembly
           </button>
           <button
             class="px-4 py-2 bg-primary-container text-white rounded"
-            onclick="changeModel('CAD/pc-stand-3d-printed-part.glb')"
+            onclick="changeModel('CAD/logo.glb')"
           >
-            3D Printed Block
+            Logo
           </button>
           <button
             class="px-4 py-2 bg-primary-container text-white rounded"
-            onclick="changeModel('CAD/pc-stand-wooden-dowel.glb')"
+            onclick="changeModel('CAD/stand-leg.glb')"
           >
-            Wooden Dowel
+            Stand Leg
           </button>
         </div>
 
@@ -335,7 +335,7 @@
         >
           <model-viewer
             id="viewer"
-            src="CAD/pc-stand-assembly.glb"
+            src="CAD/logo-assembly.glb"
             camera-controls
             auto-rotate
             interaction-prompt="none"
@@ -371,11 +371,11 @@
               >
                 <img
                   class="w-full h-full object-cover transition-all duration-500"
-                  src="drawings/PC-Stand-Sheet-1.png"
+                  src="drawings/hs-logo-drawing-package-1.png"
                 />
               </div>
-              <p class="font-label-md text-label-md text-on-surface">Expanded View</p>
-              <p class="font-label-sm text-label-sm text-secondary">PC Stand</p>
+              <p class="font-label-md text-label-md text-on-surface">Exploded View</p>
+              <p class="font-label-sm text-label-sm text-secondary">HS Tennis Logo</p>
             </div>
           </div>
 
@@ -386,11 +386,11 @@
               >
                 <img
                   class="w-full h-full object-cover transition-all duration-500"
-                  src="drawings/PC-Stand-Sheet-2.png"
+                  src="drawings/hs-logo-drawing-package-2.png"
                 />
               </div>
-              <p class="font-label-md text-label-md text-on-surface">Assembly Drawing</p>
-              <p class="font-label-sm text-label-sm text-secondary">PC Stand</p>
+              <p class="font-label-md text-label-md text-on-surface">Logo</p>
+              <p class="font-label-sm text-label-sm text-secondary">HS Tennis Logo</p>
             </div>
           </div>
 
@@ -401,31 +401,14 @@
               >
                 <img
                   class="w-full h-full object-cover transition-all duration-500"
-                  src="drawings/PC-Stand-Sheet-3.png"
+                  src="drawings/hs-logo-drawing-package-3.png"
                 />
               </div>
-              <p class="font-label-md text-label-md text-on-surface">3D Printed Block</p>
-              <p class="font-label-sm text-label-sm text-secondary">PC Stand</p>
+              <p class="font-label-md text-label-md text-on-surface">Stand Leg</p>
+              <p class="font-label-sm text-label-sm text-secondary">HS Tennis Logo</p>
             </div>
           </div>
 
-          <div class="cursor-pointer" onclick="openDrawing(3)">
-            <div class="group cursor-crosshair">
-              <div
-                class="aspect-[4/3] bg-white border border-outline-variant overflow-hidden mb-4 transition-all group-hover:border-primary"
-              >
-                <img
-                  class="w-full h-full object-cover transition-all duration-500"
-                  src="drawings/PC-Stand-Sheet-4.png"
-                />
-              </div>
-              <p class="font-label-md text-label-md text-on-surface">Wooden Dowel</p>
-              <p class="font-label-sm text-label-sm text-secondary">PC Stand</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Drawing Modal -->
     <div
@@ -523,7 +506,7 @@
 
         <div class="flex flex-wrap justify-center gap-4">
           <button
-            onclick="openDownloadModal(['CAD/PC-Stand-3D-Printed-Part.STEP','CAD/Wooden-Dowel.STEP','CAD/PC-Stand-Assembly.x_t'])"
+            onclick="openDownloadModal(['CAD/logo.STEP','CAD/stand-leg.STEP','CAD/logo-assembly.x_t'])"
             class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group"
           >
             <span class="material-symbols-outlined text-secondary group-hover:text-primary">
@@ -533,7 +516,7 @@
           </button>
 
           <button
-            onclick="openDownloadModal(['CAD/PC-Stand-3D-Printed-Part.STL'])"
+            onclick="openDownloadModal(['CAD/logo.STL','CAD/stand-leg.STL'])"
             class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group"
           >
             <span class="material-symbols-outlined text-secondary group-hover:text-primary">
@@ -543,7 +526,7 @@
           </button>
 
           <button
-            onclick="openDownloadModal(['CAD/PC-Stand-Drawing-Package.DXF'])"
+            onclick="openDownloadModal(['drawings/hs-logo-drawing-package.DXF'])"
             class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group"
           >
             <span class="material-symbols-outlined text-secondary group-hover:text-primary">
@@ -553,7 +536,7 @@
           </button>
 
           <button
-            onclick="openDownloadModal(['drawings/PC-Stand-Drawing-Package.PDF'])"
+            onclick="openDownloadModal(['drawings/hs-logo-drawing-package.PDF'])"
             class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group"
           >
             <span class="material-symbols-outlined text-secondary group-hover:text-primary">
@@ -563,7 +546,7 @@
           </button>
 
           <button
-            onclick="openDownloadModal(['manufacturing/PC-Stand-Bambu-P2S-code.gcode.3mf'])"
+            onclick="openDownloadModal(['manufacturing/hs-logo-Bambu-P2S-code.gcode.3mf'])"
             class="bg-white border border-outline-variant hover:border-primary hover:text-primary px-8 py-3 rounded-lg flex items-center gap-3 transition-all duration-200 group"
           >
             <span class="material-symbols-outlined text-secondary group-hover:text-primary">
@@ -671,7 +654,6 @@
         "drawings/Sheet-1.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH",
         "drawings/Sheet-2.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH",
         "drawings/Sheet-3.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH",
-        "drawings/Sheet-4.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH",
       ];
     </script>
 
